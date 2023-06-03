@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo {
+    margin: 1em 1em 0 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+.autoria {
+    margin: 0.5em 0 4em 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50vh;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1024px) {
+    .principal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .principal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+  
+.principal__botao {
+    padding: 0.5em;
+    font-size: 3.5em;
+    height: 2em;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.jogador__atual, .jogador__atual span {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.container__botao {
+    display: flex;
+}
+
+.mensagem__resultado {
+    text-align: center;
+    margin: 2em 0 1em 0;
+    font-size: 1.5em;
+    display: none;
+}
+
+.mensagem__resultado span {
+    color: lime;
+    font-weight: 700;
+}
+
+.jogar__novamente {
+    padding: 1em;
+    font-size: 1.2em;
+    width: auto;
+    margin: 0.5em auto;
+    cursor: pointer;
+    transition: 300ms;
+    display: none;
+}
+
+.jogar__novamente:hover {
+    scale: 1.1;
+}
